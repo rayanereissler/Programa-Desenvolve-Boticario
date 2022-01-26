@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Advinha</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulalinha () {
+            document.write ("<br> <br>");
+        }
+
+        function mostra(frase) {
+            document.write (frase);
+            pulalinha;
+            
+        }
+
+        var numeropensado = Math.round(Math.random()*10);
+
+        var chute = parseInt(prompt("Digite seu chute!"));
+
+
+        if (chute == 5) {
+            mostra ("Acertou miseravi!")
+        }
+
+        else {
+            mostra ("Ops, você errou, o número pensado foi " + numeropensado)
+        }
+
+
+    </script>
+
+</body>
+</html>

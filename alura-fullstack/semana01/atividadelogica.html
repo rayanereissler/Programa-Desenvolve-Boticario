@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de lógica</title>
+</head>
+<body>
+    
+    <script>
+
+        var minhaidade = 24;
+        var idadeirma = 18;
+        var subtração = (minhaidade - idadeirma);
+
+    </script>
+
+    <script>
+
+    function pulalinha() {
+        document.write ("<br><br>");
+    }
+
+    </script>
+
+    <script>
+
+        function mostra (frase) {
+            document.write (frase);
+
+        pulalinha ();
+
+        }
+
+    </script>
+
+    <script>
+
+        alert ("Minha primeira atividade de lógica de programação!");
+
+    </script>
+
+    <script>
+
+        mostra ("A diferença de idade entre eu e minha irmã é de " + subtração + " anos!");
+
+        mostra ("Será que funcionou?");
+
+        mostra ("Sim, funcionou!");
+
+    </script>
+
+<script>
+
+    function calculaimc (altura, peso) {
+        var imc = Math.round(peso / (altura * altura));
+        
+        mostra ( "o imc calculado é " + imc);
+    }
+
+</script>
+
+<script>
+    mostra("Agora vamos calcular o imc utilizando funções:");
+
+    mostra("Calculando o imc do professor:");
+
+    calculaimc(1.71,73);
+
+    mostra("Agora, calculando o meu imc:");
+
+    calculaimc(1.65,68);
+
+</script>
+</body>
+</html>
