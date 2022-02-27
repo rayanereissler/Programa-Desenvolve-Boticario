@@ -217,3 +217,23 @@ form label, form p {
 .itens::before {
     content: "⚝ ";
 }
+
+
+@media screen and  (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagembeneficios {
+        width: 100%;
+    }
+}
+
