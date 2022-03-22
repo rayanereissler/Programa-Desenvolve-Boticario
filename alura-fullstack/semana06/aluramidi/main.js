@@ -1,12 +1,22 @@
-function tocasompom () {
-    document.querySelector('#som_tecla_pom').play();
+function tocasom (idelementoaudio) {
+    document.querySelector(idelementoaudio).play();
 }
 
-document.querySelector('.tecla_pom').onclick = tocasompom;
+const listadeteclas = document.querySelector('.tecla');
 
-function tocasompom () {
-    document.querySelector('#som_tecla_pom').play();
+listadeteclas[0].onclick = tocasompom;
+
+let contador = 0;
+
+/*enquanto = while */
+while (contador < listadeteclas.length) {
+
+    listadeteclas[contador].onclick = function() {
+        tocasompom('#som_tecla_pom');
+    };
+
+    contador = contador + 1;
+
+    console.log(contador);
+
 }
-
-document.querySelector('.tecla_pom').onclick = tocasompom;
-
